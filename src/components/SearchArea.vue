@@ -1,11 +1,11 @@
 <template>
   <div class="form-group">
     <div class="row input-area">
-      <label class="label">カスタム入力エリア１</label>
+      <label class="label">{{value.text_label1}}</label>
       <input class="form-control" v-model="someText1" />
     </div>
     <div class="row input-area">
-      <label class="label">カスタム入力エリア２</label>
+      <label class="label">{{value.text_label2}}</label>
       <input class="form-control" v-model="someText2" />
     </div>
     <div class="row">
@@ -52,9 +52,9 @@ export default {
   methods: {
     child_click_event: function() {
       // 子要素でのクリック処理
-      console.log('子要素のクリックイベント');
+      console.log('イベント発生：child_click_event');
       // 親に伝播
-      this.$emit('child-click');
+      this.$emit('child_click');
     }
   }
 };
