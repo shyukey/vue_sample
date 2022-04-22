@@ -1,24 +1,25 @@
 # sample
 
-## Project setup
+## セットアップ（npmコマンドインストールしてたら、多分これだけでいけるはず・・・）
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### サーバー起動
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### ZipLib検証
 
-### Lints and fixes files
-```
-npm run lint
-```
+画面タブのAboutが検証画面です。
+プロジェクト直下の検証.zip使ってください。
+暗号化zip→アップ→url発行→urlから取得からダウンロード出来るファイルはzipなので要件には合うはず。
+１．「SELECT IMAGE」でzipファイルを選択
+２．「Q」か「A」か選択できるようにしてるので、選択で画像切り替え。
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+ソース箇所
+・views/AboutView.vue
+
+
+ソースみてわからないところあったら、また聞いてください。

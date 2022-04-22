@@ -29,7 +29,6 @@ export default {
     return {
       imageData: [],
       resultData: [],
-      list: [{ item: "hoge" }, { item: "fuga" }, { item: "hogehoge" }],
     };
   },
   methods: {
@@ -51,9 +50,8 @@ export default {
       // ファイル読み込み後
       const regexpTxtFile = /\.(txt)/;
       const regexpImgFile = /\.(png)/;
+      // this.$refs.input.files[0];がzip
       const files = this.$refs.input.files[0];
-      // const imageData = new Array();
-      // Promise配列
       // Zipファイル読み込み
       JSZip.loadAsync(files).then((result) => {
         console.log("sync1");
